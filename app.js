@@ -191,6 +191,22 @@ $('#PhotoButton').click(function() {
     return false;
 });
 
+$('button.removeLocal').click(function() {
+  alert("try to remove local");
+
+  localStorage.removeItem("selfie1");
+  localStorage.removeItem("selfie2");
+  localStorage.removeItem("selfie3");
+//  localStorage.setItem("selfie1", "");
+  //localStorage.setItem("selfie2", "");
+  //localStorage.setItem("selfie3", "");
+endTimer();
+startTimer();
+  getImages();
+
+    return false;
+});
+
 
 
 $('#PhotoPicker').on('change', function(e) {
